@@ -6,28 +6,29 @@
 
 /* Icon */
 
-	.icon {
-		@include icon;
-		border-bottom: none;
-		position: relative;
+.icon {
+	@include icon;
+	border-bottom: none;
+	position: relative;
 
-		> .label {
-			display: none;
-		}
+	> .label {
+		display: none;
+	}
 
+	&:before {
+		line-height: inherit;
+	}
+
+	&.solid {
 		&:before {
-			line-height: inherit;
-		}
-
-		&.solid {
-			&:before {
-				font-weight: 900;
-			}
-		}
-
-		&.brands {
-			&:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
+			font-weight: 900;
+			font-family: 'Font Awesome 5 Free Solid';
 		}
 	}
+
+	&.brands {
+		&:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+	}
+}
