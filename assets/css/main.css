@@ -1255,6 +1255,7 @@ input, select, textarea {
 
 			#viewer .slide.active .image {
 				opacity: 1;
+				background-size: contain;
 			}
 
 		body.fullscreen #viewer {
