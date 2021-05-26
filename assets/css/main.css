@@ -1244,7 +1244,6 @@ input, select, textarea {
 				background-image: url("images/spinner.svg");
 				background-position: center;
 				background-repeat: no-repeat;
-				background-size: contain;
 				margin: -1.5em 0 0 -1.5em;
 				opacity: 0;
 			}
@@ -1255,7 +1254,6 @@ input, select, textarea {
 
 			#viewer .slide.active .image {
 				opacity: 1;
-				background-size: contain;
 			}
 
 		body.fullscreen #viewer {
