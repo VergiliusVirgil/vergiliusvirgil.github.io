@@ -985,7 +985,9 @@ input, select, textarea {
 				display: block;
 				position: relative;
 				border: 0;
+				width: 10em;
 				height: 10em;
+				overflow: hidden;
 				outline: 0;
 			}
 
