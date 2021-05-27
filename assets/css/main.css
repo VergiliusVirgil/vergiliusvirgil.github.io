@@ -985,12 +985,14 @@ input, select, textarea {
 				display: block;
 				position: relative;
 				border: 0;
+				height: 10em;
 				outline: 0;
 			}
 
 				#thumbnails article .thumbnail img {
 					display: block;
 					width: 100%;
+					transform: translate(0%, -20%);
 				}
 
 				#thumbnails article .thumbnail:before {
