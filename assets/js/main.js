@@ -146,15 +146,7 @@ var main = (function($) { var _ = {
 			_.$thumbnails = $('#thumbnails');
 
 		// Viewer.
-			_.$viewer = $(
-				'<div id="viewer">' +
-					'<div class="inner">' +
-						'<div class="nav-next"></div>' +
-						'<div class="nav-previous"></div>' +
-						'<div class="toggle"></div>' +
-					'</div>' +
-				'</div>'
-			).appendTo(_.$body);
+			_.$viewer = $('#viewer');
 
 		// Nav.
 			_.$navNext = _.$viewer.find('.nav-next');
