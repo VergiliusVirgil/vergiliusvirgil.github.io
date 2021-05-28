@@ -421,7 +421,7 @@ var main = (function($) { var _ = {
 					// Slide.
 
 						// Create elements.
-	 						s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
+					s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div><div class="image-bg-blur"></div></div>');
 
 	 					// Image.
  							s.$slideImage = s.$slide.children('.image');
@@ -431,6 +431,14 @@ var main = (function($) { var _ = {
 		 							.css('background-image', '')
 		 							.css('background-position', ($thumbnail.data('position') || 'center'))
 									.css('background-size', 'contain');
+						// Background Image with Blur.
+						s.$slideImage2 = s.$slide.children('.image-bg-blur');
+
+						// Set background blur stuff.
+						s.$slideImage2
+							.css('background-image', '')
+							.css('background-position', ($thumbnail.data('position') || 'center'))
+							.css('background-size', 'cover');
 
 						// Caption.
 							s.$slideCaption = s.$slide.find('.caption');
@@ -447,6 +455,9 @@ var main = (function($) { var _ = {
 
 							// Set slide's background image to it.
 								s.$slideImage
+								.css('background-image', 'url(' + s.url + ')');
+
+								s.$slideImage2
 									.css('background-image', 'url(' + s.url + ')');
 
 							// Mark slide as loaded.
@@ -567,6 +578,8 @@ var main = (function($) { var _ = {
 
 										// Set background image.
 											newSlide.$slideImage
+											.css('background-image', 'url(' + newSlide.url + ')');
+											newSlide.$slideImage2
 												.css('background-image', 'url(' + newSlide.url + ')');
 
 										// Mark as loaded.
