@@ -33,28 +33,16 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SRTD5ZJEM"></script>
-    <script async>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-2SRTD5ZJEM');
-    </script>
-    <script async src="assets/js/panorama.js"></script>
     <script id="rendered-js" type="module">
         import * as tailwindcss from "https://cdn.skypack.dev/tailwindcss@2.0.3";
-            //# sourceURL=pen.js
+                //# sourceURL=pen.js
     </script>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
 </head>
 <body class="h-full h-auto min-h-screen page-body">
-    
-
-    <header id="video-area" data-stellar-background-ratio="0.5">
-        <div id="block">
-            <div id="panorama"></div>
-        </div>
-    </header>
+    <a-scene>
+        <a-sky src="https://i.imgur.com/eALPkl9.jpg" rotation="0 -20 0"></a-sky>
+    </a-scene>
     <div class="my-page-root__container flex flex-col min-h-screen items-center justify-between pt-8 pb-6 page-container h-full">
         <div class="my-page-root__links-container flex flex-col items-center w-full h-full mx-auto">
             <img class="my-page-root__profile-icon rounded-full" src="https://vergilius.xyz/images/Flat-Logo_White.png" alt="vergilius" />
@@ -209,7 +197,6 @@
             height: 200px;
             width: 200px;
             object-fit: cover;
-            background: var(--logoColor);
         }
 
         .my-page-root__profile-icon--small {

@@ -260,7 +260,6 @@ var main = (function($) { var _ = {
 							}
 
 					});
-
 		// Main.
 
 			// Touch gestures.
