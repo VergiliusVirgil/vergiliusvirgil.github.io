@@ -40,9 +40,6 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body class="h-full h-auto min-h-screen page-body">
-    <a-scene>
-        <a-sky src="https://i.imgur.com/eALPkl9.jpg" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 75000"></a-sky>
-    </a-scene>
     <div class="my-page-root__container flex flex-col min-h-screen items-center justify-between pt-8 pb-6 page-container h-full">
         <div class="my-page-root__links-container flex flex-col items-center w-full h-full mx-auto">
             <img class="my-page-root__profile-icon" src="https://vergilius.xyz/images/Flat-Logo_White.png" alt="vergilius" />
@@ -85,7 +82,9 @@
             </div>
         </div>
     </div>
-
+    <a-scene>
+        <a-sky src="https://i.imgur.com/eALPkl9.jpg" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 75000"></a-sky>
+    </a-scene>
     <style>
         .my-page-root,
         .my-page-root__container,
