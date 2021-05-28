@@ -1357,3 +1357,11 @@ input, select, textarea {
 	inset: 0px;
 	overflow: hidden;
 }
+
+.logo-hen {
+	width: 4.5rem;
+}
+
+.logo-fnd {
+	width: 4.5rem;
+}
