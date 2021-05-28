@@ -310,23 +310,20 @@
         }
 
         .button-about {
-            @apply duration-300 ease-in-out transition-transform cursor-pointer py-2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             border: 0px solid var(--buttonBorderColor);
             background: var(--buttonBackground);
             color: var(--buttonTextColor);
             border-radius: 12px;
-            &:hover
-            {
-                border-width: 1px;
-                border-color: var(--buttonBorderColorHover);
-                background: var(--textColor);
-                color: var(--buttonTextColorHover);
-                box-shadow: 0px 6px 12px rgba(255, 198, 39, 0.32);
-            }
         }
+
+        .button-about:hover {
+            border-width: 1px;
+            border-color: var(--buttonBorderColorHover);
+            background: var(--textColor);
+            color: var(--buttonTextColorHover);
+            box-shadow: 0px 6px 12px rgba(255, 198, 39, 0.32);
+        }
+
     </style>
 </body>
 </html>
