@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html class="my-page-root h-full min-h-screen" lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <style>
+        .my-page-root,
+        .my-page-root__container,
+        .my-page-root__logo,
+        .device-preview__screen {
+            --backgroundImageRepeat: repeat;
+            --backgroundSize: 300px;
+            --backgroundColor: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(35,35,35,1) 100%);
+            --logoColor: #ffc627;
+            --textColor: #ffc627;
+            --textFontWeight: normal;
+            --buttonBorderColor: #ffc627;
+            --buttonBorderColorHover: #000000;
+            --buttonBackground: #ffc627;
+            --buttonBackgroundHover: #ffffff;
+            --buttonTextColorHover: #000000;
+            --buttonTextColor: #000000;
+            --fontFamilyPrimary: Roboto, sans-serif;
+            --fontFamilyButton: Roboto, sans-serif;
+            --fontFamilyButtonSubtitle: Roboto, sans-serif;
+            --fontSize: 16px;
+            --fontSizeSubtitle: 12px;
+        }
+
+        .page-body {
+            background-image: url();
+            background-repeat: var(--backgroundImageRepeat);
+            background-size: var(--backgroundSize);
+        }
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .my-page-root {
+            height: 100% !important;
+            background: var(--backgroundColor) no-repeat;
+        }
+
+        .my-page-root__container {
+            flex-direction: column;
+            position: relative;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .my-page-root__links-container {
+            transition: transform;
+            transition-duration: 0.3s;
+        }
+
+        .my-page-root__links-container--inactive {
+            transform: translateY(-100vh);
+            height: 0;
+            overflow: hidden;
+        }
+
+        .my-page-root__title {
+            color: var(--textColor);
+            font-family: var(--fontFamilyPrimary);
+            font-weight: var(--textFontWeight);
+            font-size: var(--fontSize, 16px);
+        }
+
+        .my-page-root__bio {
+            color: var(--textColor);
+            font-family: var(--fontFamilyPrimary);
+            font-weight: var(--fontWeightBio, 'normal');
+            font-size: var(--fontSizeBio, 14px);
+        }
+
+        .my-page-root__subtitle {
+            color: var(--textColor);
+            font-family: var(--fontFamilyPrimary);
+            font-weight: var(--textFontWeight);
+            font-size: var(--buttonFontSize, 14px);
+        }
+
+        .my-page-root__link-title {
+            font-size: var(--buttonFontSize, 16px);
+            font-family: var(--fontFamilyButton);
+            font-weight: var(--buttonFontWeight, 500);
+            text-transform: var(--buttonTitleTextTransform, initial);
+            color: var(--buttonTextColor, inherit);
+        }
+
+        .my-page-root__link:hover .my-page-root__link-title {
+            color: var(--buttonTextColorHover, --buttonTextColor, inherit);
+        }
+
+        .my-page-root__link:hover .my-page-root__link-sub-title {
+            color: var(--buttonSubtitleColorHover, --buttonSubtitleColor, inherit);
+        }
+
+        .my-page-root__link-sub-title {
+            font-family: var(--fontFamilyButtonSubtitle);
+            font-weight: var(--buttonFontWeightSubtitle);
+            font-size: var(--fontSizeSubtitle, 12px);
+            color: var(--buttonSubtitleColor, inherit);
+        }
+
+        .my-page-root__profile-icon {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            background: var(--logoColor);
+        }
+
+        .my-page-root__profile-icon--small {
+            height: 32px;
+            width: 32px;
+            object-fit: cover;
+            background: var(--logoColor);
+        }
+
+        .my-page-root__profile-icon--medium {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            background: var(--logoColor);
+        }
+
+        .my-page-root__links {
+            width: 680px;
+            padding-left: 16px;
+            padding-right: 16px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .my-page-root__link {
+            display: flex;
+            min-height: 52px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 8px 16px;
+            text-align: center;
+        }
+
+        .my-page-root__link path {
+            fill: var(--buttonTextColor) !important;
+        }
+
+        .my-page-root__link:hover path {
+            fill: var(--buttonTextColorHover, --buttonTextColor, inherit) !important;
+        }
+
+        .my-page-root__link span {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .my-page-root__logo {
+            margin-top: 24px;
+            height: 35px;
+            display: flex;
+            align-items: ceter;
+            justify-content: center;
+        }
+
+            .my-page-root__logo rect {
+                fill: var(--logoColor);
+            }
+
+        .page-body {
+            background-repeat: var(--backgroundImageRepeat, none);
+            background-size: var(--backgroundSize, cover);
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SRTD5ZJEM"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2SRTD5ZJEM');
+    </script>
+</head>
+<body class="h-full h-auto min-h-screen page-body">
+    <div class="my-page-root__container flex flex-col min-h-screen items-center justify-between pt-8 pb-6 page-container h-full">
+        <div class="my-page-root__links-container flex flex-col items-center w-full h-full mx-auto">
+            <img class="my-page-root__profile-icon rounded-full" height="100px" width="100px" src="https://cdn.wlo.link/static/default-icons/rabbit.png" alt="logitech" />
+            <div class="my-page-root__title mt-6">
+                <span>@</span>username
+            </div>
+            <div class="my-page-root__bio text-center break-words px-4 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </div>
+            <div class="my-page-root__links mt-6">
+
+
+                <a class="my-page-root__link w-full mb-4 button-about"
+                   href="https://wlo.link/contest"
+                   onclick="WillowStats.trackLinkClick('19754cb8-54a5-425f-a74e-4817797a93d1')"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                    <span class="my-page-root__link-title">Twitch</span>
+                    <span class="my-page-root__link-sub-title">Description - twitch.tv/username</span>
+                </a>
+
+                <a class="my-page-root__link w-full mb-4 button-logitech"
+                   href="https://www.instagram.com/keys2castle/"
+                   onclick="WillowStats.trackLinkClick('e80266bd-e2f8-46fe-944a-3f3af1cbd056')"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                    <span class="my-page-root__link-title">Twitter</span>
+                    <span class="my-page-root__link-sub-title">Description - @handle</span>
+                </a>
+
+                <a class="my-page-root__link w-full mb-4 button-logitech"
+                   href="https://www.tiktok.com/"
+                   onclick="WillowStats.trackLinkClick('d934f743-d7e4-467f-b656-705697e4045a')"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                    <span class="my-page-root__link-title">Instagram</span>
+                    <span class="my-page-root__link-sub-title">Description - @handle</span>
+                </a>
+
+                <a class="my-page-root__link w-full mb-4 button-logitech"
+                   href="https://www.tiktok.com/@larrayeeee"
+                   onclick="WillowStats.trackLinkClick('a67d6e1e-1179-40d6-a130-be025a197b3a')"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                    <span class="my-page-root__link-title">Facebook</span>
+                    <span class="my-page-root__link-sub-title">Description - @handle</span>
+                </a>
+
+            </div>
+            <div class="my-page-root__logo">
+                <a href="https://wlo.link" target="_blank">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes strokeWidthGrow {
+            to {
+                stroke-width: 4;
+            }
+        }
+
+        @keyframes rotation {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(30deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            75% {
+                -webkit-transform: rotate(-30deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .button-about {
+            @apply duration-300 ease-in-out transition-transform cursor-pointer py-2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0px solid var(--buttonBorderColor);
+            background: var(--buttonBackground);
+            color: var(--buttonTextColor);
+            border-radius: 12px;
+            &:hover
+            {
+                border-width: 1px;
+                border-color: var(--buttonBorderColorHover);
+                background: var(--textColor);
+                color: var(--buttonTextColorHover);
+                box-shadow: 0px 6px 12px rgba(255, 198, 39, 0.32);
+            }
+        }
+    </style>
+</body>
+</html>
