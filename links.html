@@ -44,39 +44,39 @@
         <div class="my-page-root__links-container flex flex-col items-center w-full h-full mx-auto">
             <img class="my-page-root__profile-icon" src="https://vergilius.xyz/images/Flat-Logo_White.png" alt="vergilius" />
             <div class="my-page-root__bio text-center break-words px-4 mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                Vergilius is a crypto artist capturing an rare cinematic look at digital experiences. Years of creating as a digital artist in the game industry has developed his for cinematography and visual storytelling.
             </div>
             <div class="my-page-root__links mt-6">
                 <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://wlo.link/contest"
+                   href="https://vergilius.xyz/"
                    rel="noopener noreferrer"
                    target="_blank">
-                    <span class="my-page-root__link-title">Twitch</span>
-                    <span class="my-page-root__link-sub-title">Description - twitch.tv/username</span>
+                    <span class="my-page-root__link-title">Website</span>
+                    <span class="my-page-root__link-sub-title"></span>
                 </a>
 
                 <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://www.instagram.com/keys2castle/"
+                   href="https://twitter.com/vergiliusxyz"
                    rel="noopener noreferrer"
                    target="_blank">
                     <span class="my-page-root__link-title">Twitter</span>
-                    <span class="my-page-root__link-sub-title">Description - @handle</span>
+                    <span class="my-page-root__link-sub-title">News &Aacute; Behind The Scenes</span>
                 </a>
 
                 <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://www.tiktok.com/"
+                   href="https://www.hicetnunc.xyz/"
                    rel="noopener noreferrer"
                    target="_blank">
-                    <span class="my-page-root__link-title">Instagram</span>
-                    <span class="my-page-root__link-sub-title">Description - @handle</span>
+                    <span class="my-page-root__link-title">HIC ET NUNC</span>
+                    <span class="my-page-root__link-sub-title">Crypto Art NFTs</span>
                 </a>
 
                 <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://www.tiktok.com/@larrayeeee"
+                   href="https://foundation.app/vergiliusvirgil"
                    rel="noopener noreferrer"
                    target="_blank">
-                    <span class="my-page-root__link-title">Facebook</span>
-                    <span class="my-page-root__link-sub-title">Description - @handle</span>
+                    <span class="my-page-root__link-title">Foundation</span>
+                    <span class="my-page-root__link-sub-title">Crypto Art NFTs</span>
                 </a>
 
             </div>
@@ -93,15 +93,15 @@
             --backgroundImageRepeat: repeat;
             --backgroundSize: 300px;
             --backgroundColor: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(35,35,35,1) 100%);
-            --logoColor: #ffc627;
-            --textColor: #ffc627;
+            --logoColor: #ffffff;
+            --textColor: #ffffff;
             --textFontWeight: normal;
             --buttonBorderColor: #ffc627;
             --buttonBorderColorHover: #000000;
             --buttonBackground: #ffc627;
             --buttonBackgroundHover: #ffffff;
-            --buttonTextColorHover: #000000;
-            --buttonTextColor: #000000;
+            --buttonTextColorHover: #ffffff;
+            --buttonTextColor: #ffffff;
             --fontFamilyPrimary: Roboto, sans-serif;
             --fontFamilyButton: Roboto, sans-serif;
             --fontFamilyButtonSubtitle: Roboto, sans-serif;
@@ -161,6 +161,7 @@
             font-family: var(--fontFamilyPrimary);
             font-weight: var(--fontWeightBio, 'normal');
             font-size: var(--fontSizeBio, 14px);
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
         }
 
         .my-page-root__subtitle {
@@ -411,17 +412,18 @@
         }
 
         .button-about {
-            border: 0px solid var(--buttonBorderColor);
             backdrop-filter: blur(30px) saturate(1.5);
             color: var(--buttonTextColor);
             border-radius: 12px;
+            background-color: rgba(255,255,255,0.1);
+            transition: all 1s ease;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
         }
 
             .button-about:hover {
-                border-width: 1px;
-                border-color: var(--buttonBorderColorHover);
-                color: var(--buttonTextColorHover);
-                box-shadow: 0px 6px 12px rgba(255, 198, 39, 0.32);
+                color: var(--buttonTextColor);
+                box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.32);
+                transition: all 1s ease;
             }
     </style>
 </body>
