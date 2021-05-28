@@ -1352,3 +1352,9 @@ input, select, textarea {
 				}
 
 		}
+#panorama {
+	position: absolute;
+	z-index: -1;
+	inset: 0px;
+	overflow: hidden;
+}
