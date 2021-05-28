@@ -33,15 +33,15 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SRTD5ZJEM"></script>
-    <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-2SRTD5ZJEM');
-    </script>
 </head>
 <body class="h-full h-auto min-h-screen page-body">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SRTD5ZJEM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2SRTD5ZJEM');
+    </script>
     <div class="my-page-root__container flex flex-col min-h-screen items-center justify-between pt-8 pb-6 page-container h-full">
         <div class="my-page-root__links-container flex flex-col items-center w-full h-full mx-auto">
             <img class="my-page-root__profile-icon rounded-full" src="https://cdn.wlo.link/static/default-icons/rabbit.png" alt="vergilius" />
@@ -244,21 +244,21 @@
             text-align: center;
         }
 
-        .my-page-root__link path {
-            fill: var(--buttonTextColor) !important;
-        }
+            .my-page-root__link path {
+                fill: var(--buttonTextColor) !important;
+            }
 
-        .my-page-root__link:hover path {
-            fill: var(--buttonTextColorHover, --buttonTextColor, inherit) !important;
-        }
+            .my-page-root__link:hover path {
+                fill: var(--buttonTextColorHover, --buttonTextColor, inherit) !important;
+            }
 
-        .my-page-root__link span {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 100%;
-            text-align: center;
-            overflow: hidden;
-        }
+            .my-page-root__link span {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 100%;
+                text-align: center;
+                overflow: hidden;
+            }
 
         .my-page-root__logo {
             margin-top: 24px;
@@ -268,9 +268,9 @@
             justify-content: center;
         }
 
-        .my-page-root__logo rect {
-            fill: var(--logoColor);
-        }
+            .my-page-root__logo rect {
+                fill: var(--logoColor);
+            }
 
         .page-body {
             background-repeat: var(--backgroundImageRepeat, none);
@@ -427,14 +427,13 @@
             border-radius: 12px;
         }
 
-        .button-about:hover {
-            border-width: 1px;
-            border-color: var(--buttonBorderColorHover);
-            background: var(--textColor);
-            color: var(--buttonTextColorHover);
-            box-shadow: 0px 6px 12px rgba(255, 198, 39, 0.32);
-        }
-
+            .button-about:hover {
+                border-width: 1px;
+                border-color: var(--buttonBorderColorHover);
+                background: var(--textColor);
+                color: var(--buttonTextColorHover);
+                box-shadow: 0px 6px 12px rgba(255, 198, 39, 0.32);
+            }
     </style>
 </body>
 </html>
