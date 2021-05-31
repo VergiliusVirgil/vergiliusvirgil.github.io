@@ -1391,6 +1391,10 @@ input, select, textarea {
 	border-bottom: 1px solid #ffffff;
 }
 
-	.thumbnail-link:hover {
-		border-bottom: 1px solid #00D3B7;
+.thumbnail-link:hover {
+	border-bottom: 1px solid #00D3B7;
+}
+
+	.thumbnail-link:nth-child(2) {
+		margin-left: 0.5rem;
 	}
