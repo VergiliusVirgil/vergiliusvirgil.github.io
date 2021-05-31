@@ -1386,3 +1386,11 @@ input, select, textarea {
 .logo-fnd {
 	width: 4.5rem;
 }
+
+.thumbnail-link {
+	border-bottom: 1px solid #ffffff;
+}
+
+	.thumbnail-link:hover {
+		border-bottom: 1px solid #00D3B7;
+	}
