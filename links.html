@@ -47,47 +47,41 @@
             <a class="profile-icon" href="https://vergilius.xyz/">
                 <img class="my-page-root__profile-icon" src="https://vergilius.xyz/images/Flat-Logo_White.png" alt="vergilius" />
             </a>
-            <div class="my-page-root__links mt-6">
-                <p class="my-page-root__bio text-center break-words px-4 mt-2">A digital lens capturing a unique cinematic perspective.</p>
-                <p class="my-page-root__bio-body text-center break-words px-4">Years of creating as a digital artist in the game industry has developed their eye for cinematography and visual storytelling, as well as expanded self-taught knowledge of various tools and workflows. Vergilius is an alias of a professional designer & director who has been publishing work since 2011, born to explore new digital technologies with unique perspective.</p>
-                <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://vergilius.xyz/"
-                   rel="noopener noreferrer"
-                   target="_blank">
-                    <span class="my-page-root__link-title">Website</span>
-                    <span class="my-page-root__link-sub-title"></span>
-                </a>
-                <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://www.hicetnunc.xyz/tz/tz1iMZu2UwQBgsL7ardvdjjYEv88cRA5Qftt"
-                   rel="noopener noreferrer"
-                   target="_blank">
-                    <span class="my-page-root__link-title">HIC ET NUNC</span>
-                    <span class="my-page-root__link-sub-title">Crypto Art NFTs</span>
-                </a>
-                <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://twitter.com/vergiliusxyz"
-                   rel="noopener noreferrer"
-                   target="_blank">
-                    <span class="my-page-root__link-title">Twitter</span>
-                    <span class="my-page-root__link-sub-title">News & Behind The Scenes</span>
-                </a>
-                <a class="my-page-root__link w-full mb-4 button-about"
-                   href="https://society6.com/vergiliusxyz/all"
-                   rel="noopener noreferrer"
-                   target="_blank">
-                    <span class="my-page-root__link-title">Society6</span>
-                    <span class="my-page-root__link-sub-title">Shop Physical Prints & Wall Art</span>
-                </a>
-                
-                <!--
-        <a class="my-page-root__link w-full mb-4 button-about"
-           href="https://foundation.app/vergiliusxyz"
-           rel="noopener noreferrer"
-           target="_blank">
-            <span class="my-page-root__link-title">Foundation</span>
-            <span class="my-page-root__link-sub-title">Crypto Art NFTs</span>
-        </a>
-    -->
+            <div class="my-page-root__bio">
+                <p class=" text-center break-words px-4 mt-2">A digital lens capturing a unique cinematic perspective.</p>
+                <p class="bio-body text-center break-words px-4">Years of creating as a digital artist in the game industry has developed their eye for cinematography and visual storytelling, as well as expanded self-taught knowledge of various tools and workflows. Vergilius is an alias of a professional designer & director who has been publishing work since 2011, born to explore new digital technologies with unique perspective.</p>
+            </div>
+            <div class="my-page-root__links justify-between">
+                <div>
+                    <a class="my-page-root__link w-full mb-4 button-about"
+                       href="https://vergilius.xyz/"
+                       rel="noopener noreferrer"
+                       target="_blank">
+                        <span class="my-page-root__link-title">Website</span>
+                        <span class="my-page-root__link-sub-title"></span>
+                    </a>
+                    <a class="my-page-root__link w-full mb-4 button-about"
+                       href="https://www.hicetnunc.xyz/tz/tz1iMZu2UwQBgsL7ardvdjjYEv88cRA5Qftt"
+                       rel="noopener noreferrer"
+                       target="_blank">
+                        <span class="my-page-root__link-title">HIC ET NUNC</span>
+                        <span class="my-page-root__link-sub-title">Crypto Art NFTs</span>
+                    </a>
+                    <a class="my-page-root__link w-full mb-4 button-about"
+                       href="https://twitter.com/vergiliusxyz"
+                       rel="noopener noreferrer"
+                       target="_blank">
+                        <span class="my-page-root__link-title">Twitter</span>
+                        <span class="my-page-root__link-sub-title">News & Behind The Scenes</span>
+                    </a>
+                    <a class="my-page-root__link w-full mb-4 button-about"
+                       href="https://society6.com/vergiliusxyz/all"
+                       rel="noopener noreferrer"
+                       target="_blank">
+                        <span class="my-page-root__link-title">Society6</span>
+                        <span class="my-page-root__link-sub-title">Shop Physical Prints & Wall Art</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -171,9 +165,16 @@
             font-weight: var(--fontWeightBio, 'normal');
             font-size: 20px;
             text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
+            width: 680px;
+            padding-left: 16px;
+            padding-right: 16px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 0;
         }
 
-        .my-page-root__bio-body {
+        .bio-body {
             color: var(--textColor);
             font-family: var(--fontFamilyPrimary);
             font-weight: var(--fontWeightBio, 'normal');
@@ -212,8 +213,8 @@
         }
 
         .my-page-root__profile-icon {
-            height: 200px;
-            width: 200px;
+            height: 100px;
+            width: 100px;
             object-fit: cover;
         }
 
@@ -269,16 +270,18 @@
             }
 
         .my-page-root__logo {
-            margin-top: 24px;
-            height: 35px;
+            padding: 24px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: 100px;
+            width: 100px;
         }
 
-            .my-page-root__logo rect {
-                fill: var(--logoColor);
-            }
+        .box-border {
+            box-sizing: border-box;
+        }
 
         .justify-between {
             justify-content: space-between;
@@ -438,12 +441,15 @@
             text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
         }
 
-            .button-about:hover {
-                color: var(--buttonTextColor);
-                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.32);
-                background-color: rgba(255,255,255,0.3);
-                transition: all 1s ease;
-            }
+        .button-about:hover {
+            color: var(--buttonTextColor);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.32);
+            background-color: rgba(255,255,255,0.3);
+            transition: all 1s ease;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
     </style>
 </body>
 </html>
